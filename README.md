@@ -141,3 +141,91 @@ We can use @Qualifier to all types of dependency i.e., Constructor, method and F
 1. Create properties file.
 2. Load Properties file in spring config.
 3. reference values from properties file.
+
+# Spring MVC :
+
+- Framework for building web application in Java.
+- Based on Model-view-controlled design pattern.
+- Leverages features of the Core Spring Framework(IoC,DI).
+
+> Spring MVC documentation www.luv2code.com/spring-mvc-docs
+
+### components of Spring MVC application
+
+- A set of web pages to layout UI components (web pages).
+- A collection of Spring bean (Controllers, services, etc...)
+- Spring configuration (XML, Annotation or Java)
+
+Spring Execution :
+
+> Web browser -> Front Controller -> controller -> view-template -> browser.
+
+Spring MVC front controller :
+
+- Front controller known as **DispatcherSerlet**
+
+  - Part of the Spring framework.
+  - Already developed by Spring dev team.
+
+- You will create
+  - <u>M</u>odel Objects.(Object/ data)
+  - <u>V</u>iew templates. (JSP pages)
+  - <u>C</u>ontroller classes. (business logic)
+
+### <u>C</u>ontroller :
+
+Code created by developer.
+
+- Contains your business logic
+  - Handle request.
+  - Store or retrieve data(db, web services...)
+  - Place data in model
+- Send appropriate view template.
+
+### <u>M</u>odel :
+
+- Model : contains your data.
+- store/retrieve data via backend systems
+  - db, web services etc...
+  - use a spring bean if you like.
+- Place your data in the model
+  - Data can be any Java objects/collection.
+
+### <u>V</u>iew :
+
+- Spring MVC is flexible
+  - Supports many view templates.
+- Most common is JSP + JSTL.
+- Developer creates a page
+  - Displays data
+- Other view templates supported Thymeleaf, groovy, velocity, Freemarker , etc...
+
+> For details view : www.luv2code.com/spring-mvc-views
+
+# Spring MVC configuration - setup
+
+### Step - 1
+
+Add configurations to file: WEB-INF/web.xml
+
+1. configure Spring MVC Dispatcher Servlet
+2. Se up URL mappings to Spring MVC Dispatcher servlet.
+
+### Step - 2
+
+3. Add support for spring component scanning.
+4. Add support for conversion, formatting, and validation.
+5. Configure Spring MVC View Resolver.
+
+# Spring - MVC project
+
+### Developing spring controllers and views :
+
+### Development Process :
+
+1. Create controller class
+   > annotate class with @Controller (@Controller inherit from @Component)
+2. Define Controller method
+3. Add request mapping to controller method.
+4. Return view name
+5. Develop view page.
