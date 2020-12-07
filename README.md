@@ -115,3 +115,29 @@ We can use @Qualifier to all types of dependency i.e., Constructor, method and F
 
 1. Define your methods for init and Destroy.
 2. Add annotation : @PostConstruct and @PreDestroy.
+
+### Spring Configuration with Java code (No XML required)
+
+### Development Process :
+
+1. Create a Java class and annotate as `@Configuration`
+2. Adding component scanning Support : `@ComponentScan` (optional)
+3. Read Spring Java configuration class
+4. Retrieve bean from spring container.
+
+### Defining Beans with Java Code
+
+### Development - process
+
+1. Define method to expose bean
+2. Inject bean dependencies.
+3. Read Spring Java Configuration class
+4. Retrieve bean from spring container
+
+### Inject values from properties files.
+
+### Development Process :
+
+1. Create properties file.
+2. Load Properties file in spring config.
+3. reference values from properties file.
